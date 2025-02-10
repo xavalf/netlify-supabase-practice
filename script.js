@@ -1,5 +1,5 @@
 document.getElementById('fetchData').addEventListener('click', async () => {
-    const response = await fetch('https://tu-servidor.com/proxy.php');  // Cambia esto por la URL de tu servidor
+    const response = await fetch('https://netlify-supabase-practice.onrender.com');  // Cambia esto por la URL de tu servidor
 
     if (response.ok) {
         const data = await response.json();
