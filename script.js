@@ -1,6 +1,8 @@
+// Inicializar Supabase correctamente
 const supabaseUrl = 'https://kcoukdhkpxcjrndbcrla.supabase.co';
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imtjb3VrZGhrcHhjanJuZGJjcmxhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzg5MTg2OTQsImV4cCI6MjA1NDQ5NDY5NH0._5oY1SOcPF-olH9o9lQlqbwTQNutStYqXpDzQn6DLjg';
-const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+
+const supabase = window.supabase.createClient(supabaseUrl, supabaseKey); // Usa window.supabase
 
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
