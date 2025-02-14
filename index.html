@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netlify and Supabase Practice</title>
+    <title>Netlify y Supabase - Práctica</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Agregar la librería de Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 </head>
 <body>
     <h1>Netlify y Supabase - Práctica</h1>
@@ -12,13 +15,13 @@
     <div id="auth-container">
         <h2>Login / Sign Up</h2>
         <input type="email" id="email" placeholder="Ingresa tu email">
-        <br></br>
+        <br><br>
         <input type="password" id="password" placeholder="Ingresa tu contraseña">
-        <br></br>
+        <br><br>
         <button id="signUp">Registrarse</button>
-        <br></br>
+        <br><br>
         <button id="logIn">Iniciar Sesión</button>
-        <br></br>
+        <br><br>
         <button id="logOut" style="display:none;">Cerrar Sesión</button>
     </div>
 
@@ -27,6 +30,7 @@
         <div id="data"></div>
     </div>
 
+    <!-- Incluir el script de Supabase después de cargar la librería -->
     <script src="script.js"></script>
 </body>
 </html>
